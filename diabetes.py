@@ -13,7 +13,6 @@ def main():
     st.markdown("---")
 
     # 🖼️ Slideshow Section
-    st.markdown("### Diabetes Awareness")
     image_folder = "images"
 
     if os.path.exists(image_folder):
