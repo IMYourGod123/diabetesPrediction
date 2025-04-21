@@ -24,7 +24,7 @@ def main():
                 st.session_state.slide_index = 0
 
             image_path = os.path.join(image_folder, image_files[st.session_state.slide_index])
-            st.image(image_path, use_column_width=True, caption=f"Slide {st.session_state.slide_index + 1} | 幻灯片 {st.session_state.slide_index + 1}")
+            st.image(image_path, use_container_width=True, caption=f"Slide {st.session_state.slide_index + 1} | 幻灯片 {st.session_state.slide_index + 1}")
 
             # Auto refresh every 3 seconds
             st_autorefresh(interval=3000, key="slideshow_refresh")
